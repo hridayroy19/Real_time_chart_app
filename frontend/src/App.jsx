@@ -1,14 +1,14 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Setting from "./pages/Setting";
+import  SignUp from "./pages/Signup"
 import Profile from "./pages/Profile";
 import { useAuthStore } from "./store/useAuthStore";
 import { useEffect } from "react";
 import { Loader } from "lucide-react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth } = useAuthStore();
@@ -32,7 +32,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/settings" element={<Setting />} />
         <Route path="/profile" element={<Profile />} />

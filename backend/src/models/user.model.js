@@ -4,24 +4,24 @@ const userSchema = new mongoose.Schema(
   {
     email: {
       type: String,
-      required: true, 
+      required: true,
       unique: true,
     },
     fullname: {
       type: String,
-      required: true, 
+      required: true,
     },
     password: {
       type: String,
-      required: true, 
+      required: true,
     },
-    profilpic: {
+    profilePic: {
       type: String,
       default: "",
     },
   },
   {
-    timestamps: true, 
+    timestamps: true,
   }
 );
 

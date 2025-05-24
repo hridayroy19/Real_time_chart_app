@@ -19,7 +19,7 @@ const App = () => {
   }, [checkAuth]);
   const { theme } = useThemeStore();
 
-  console.log(authUser, "userrrr");
+  // console.log(authUser, "userrrr");
 
   if (isCheckingAuth && !authUser) {
     return (

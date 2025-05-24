@@ -23,7 +23,7 @@ app.use(cors({
 
 // Routes
 app.use("/api/auth", authRouter);
-app.use("/api/message", messageRouter);
+app.use("/api/messages", messageRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello Hridoy!");
